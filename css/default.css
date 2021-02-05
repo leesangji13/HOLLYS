@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/*공통css*/
+body,h1,h2,h3,h4,h5,h6,p{margin:0;}
+body{
+    color:#555;
+}
+ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+a{
+    color:#555;
+    text-decoration:none;
+}
+.inner{
+    width:940px;
+    margin:0 auto;
+}
+.cf::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+

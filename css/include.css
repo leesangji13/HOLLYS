@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/**헤더**/
+#header{
+    text-align:center;
+    position:relative;
+    padding-top:50px;
+}
+
+/*로고*/
+#header h1{}
+#header h1 a{}
+#header h1 img{}
+
+/*메뉴*/
+.gnb{
+    display:inline-block;
+    padding:20px 0;
+}
+.gnb>li{
+    float:left;
+    padding:0 30px;
+    position:relative;
+}
+.gnb li a{}
+.gnb li img{}
+
+/*호보*/
+.on{display:none;}
+.gnb li:hover .on{display:block;}
+.gnb li:hover .off{display:none;}
+.off{display:block;}
+
+/*서브메뉴*/
+.lnb{
+    width:100%;
+    position:absolute;
+    left:0;
+    top:42px;
+    z-index:1;
+    background:#565656;
+    display:none;
+    font-size:14px;
+}
+.gnb li:hover .lnb{
+    display:block;
+    
+}
+.lnb li{
+    line-height:50px;
+    text-align:center;
+}
+.lnb li a{
+    color:#fff;
+}
+.lnb li:hover a{color:#CDCDCD;}
+
+/*가맹문의아카데미*/
+.util01{
+    position:absolute;
+    top:0;
+}
+.util01 li{
+    width:99px;
+    height:76px;
+    float:left;
+}
+.util01 li a{
+    height:100%;
+    display:block;
+}
+.utilAca img{padding-top:20px;}
+.util01 li img{}
+
+/*회원가입유틸*/
+.util02{
+    position:absolute; /*abs으로띄워서 오른쪽으로 붙이면 기준창이없기때문에 제일오른쪽끝에 붙어버림.그래서 최고부모header에 기준창relative를 만들어줌.*/
+    top:20px;
+    right:0;
+    
+}
+.util02 li{
+    float:left;
+    margin-left:15px;
+}
+.util02 li a{}
+.util02 li img{}
+
+
+
+/*푸터*/
+#footer{
+    margin-top:50px;
+    background:url(../images/bg_footer.gif);
+    color:#de898e;
+    font-size:13px;
+    padding:50px 0;
+}
+
+.fMenu{}
+.fMenu li{
+    float:left;
+}
+.fMenu li::after{
+    content:"";
+    display:inline-block;
+    width:1px;
+    height:8px;
+    background:#fff;
+    margin:0 8px 0 3px;
+}
+.fMenu li:last-child::after{
+    display:none;
+}
+.fMenu li a{
+    color:#fff;
+    font-weight:bold;
+}
+.fMenu li a:hover{text-decoration:underline;}
+
+#footer p{margin-top:20px;}
+
+
+
+
+
